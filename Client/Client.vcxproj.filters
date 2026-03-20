@@ -13,10 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\socket">
+      <UniqueIdentifier>{b74d28e6-d020-47df-b643-19728e8a3181}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\exceptions">
+      <UniqueIdentifier>{8234cdb3-87e3-4391-8737-2271bf2e3c91}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MySocket.cpp">
+      <Filter>Source Files\socket</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MySocket.h">
+      <Filter>Source Files\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="InvalidConnectionState.h">
+      <Filter>Source Files\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="InvalidConnectionType.h">
+      <Filter>Source Files\exceptions</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
