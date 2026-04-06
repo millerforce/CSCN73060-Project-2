@@ -128,12 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MySocket.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InvalidConnectionState.h" />
     <ClInclude Include="InvalidConnectionType.h" />
-    <ClInclude Include="MySocket.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

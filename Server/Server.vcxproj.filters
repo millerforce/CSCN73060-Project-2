@@ -27,14 +27,8 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MySocket.cpp">
-      <Filter>Source Files\socket</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MySocket.h">
-      <Filter>Source Files\socket</Filter>
-    </ClInclude>
     <ClInclude Include="InvalidConnectionType.h">
       <Filter>Source Files\exceptions</Filter>
     </ClInclude>
