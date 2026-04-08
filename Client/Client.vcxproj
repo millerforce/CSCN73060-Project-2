@@ -132,14 +132,12 @@
   <ItemGroup>
     <ClCompile Include="file_io.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="UUID.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileNotFound.h" />
     <ClInclude Include="file_io.h" />
     <ClInclude Include="InvalidConnectionState.h" />
     <ClInclude Include="InvalidConnectionType.h" />
-    <ClInclude Include="UUID.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharedLibrary\SharedLibrary.vcxproj">

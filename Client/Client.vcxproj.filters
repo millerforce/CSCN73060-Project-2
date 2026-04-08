@@ -22,9 +22,6 @@
     <Filter Include="Source Files\file">
       <UniqueIdentifier>{539dc59c-5c7d-4b5d-8d5a-4d795b2a7167}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\uuid">
-      <UniqueIdentifier>{a5575ef2-54fc-43ac-804d-2861c4df8f4a}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -32,9 +29,6 @@
     </ClCompile>
     <ClCompile Include="file_io.cpp">
       <Filter>Source Files\file</Filter>
-    </ClCompile>
-    <ClCompile Include="UUID.cpp">
-      <Filter>Source Files\uuid</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -49,9 +43,6 @@
     </ClInclude>
     <ClInclude Include="FileNotFound.h">
       <Filter>Source Files\file</Filter>
-    </ClInclude>
-    <ClInclude Include="UUID.h">
-      <Filter>Source Files\uuid</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

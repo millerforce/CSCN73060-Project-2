@@ -25,6 +25,12 @@
     <Filter Include="Source Files\socket">
       <UniqueIdentifier>{248fb4e6-b8eb-43c6-9864-c565c0ae0a37}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\uuid">
+      <UniqueIdentifier>{463e70b0-35c5-4bb9-be61-b6576f4ba526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\uuid">
+      <UniqueIdentifier>{c6ed2d0e-e1e8-4a33-a677-a03ec6d05628}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClientSocket.h">
@@ -39,10 +45,16 @@
     <ClInclude Include="InvalidConnectionType.h">
       <Filter>Header Files\exceptions</Filter>
     </ClInclude>
+    <ClInclude Include="UUID.h">
+      <Filter>Header Files\uuid</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClientSocket.cpp">
       <Filter>Source Files\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="UUID.cpp">
+      <Filter>Source Files\uuid</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
