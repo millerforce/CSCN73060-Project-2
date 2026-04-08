@@ -6,10 +6,6 @@
 
 // Standard constructor to initialize server socket and begin listening for connections
 ServerSocket::ServerSocket(int port) {
-	WSADATA wsaData;
-	if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
-		throw InvalidConnectionStateException("Error occured when starting Winsock");
-	}
 
 	// Create socket
 	this->listenSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
@@ -54,8 +50,6 @@ ServerSocket::~ServerSocket() {
 
 	for (auto& thread : clientThreads)
 		if (thread.joinable()) thread.join();
-
-	WSACleanup();
 }
 
 void ServerSocket::acceptLoop() {
