@@ -13,42 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\socket">
-      <UniqueIdentifier>{1900ee32-4428-4a12-b831-01d154b5fb28}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\exceptions">
-      <UniqueIdentifier>{8092c2af-51af-47c2-bffd-468d9ec5491b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\socket">
-      <UniqueIdentifier>{82edb499-d78f-4e3f-9ea1-af531d683383}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\exceptions">
-      <UniqueIdentifier>{511c52e7-543d-4135-84a6-e09a7c619328}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ServerSocket.cpp">
-      <Filter>Source Files\socket</Filter>
-    </ClCompile>
-    <ClCompile Include="ClientSocket.cpp">
-      <Filter>Source Files\socket</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClientSocket.h">
-      <Filter>Header Files\socket</Filter>
-    </ClInclude>
     <ClInclude Include="ServerSocket.h">
-      <Filter>Header Files\socket</Filter>
-    </ClInclude>
-    <ClInclude Include="InvalidConnectionState.h">
-      <Filter>Header Files\exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="InvalidConnectionType.h">
-      <Filter>Header Files\exceptions</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\exceptions">
+      <UniqueIdentifier>{e5ddfc4b-6ab8-4234-84a9-739403d4ecca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\packet">
+      <UniqueIdentifier>{960c79c3-db1c-4a3e-8eb0-965c2d61e9e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\socket">
+      <UniqueIdentifier>{21349054-0258-47f4-a2c3-9c449b8dfa03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\socket">
+      <UniqueIdentifier>{248fb4e6-b8eb-43c6-9864-c565c0ae0a37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClientSocket.h">
+      <Filter>Header Files\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>Header Files\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="InvalidConnectionState.h">
+      <Filter>Header Files\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="InvalidConnectionType.h">
+      <Filter>Header Files\exceptions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientSocket.cpp">
+      <Filter>Source Files\socket</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
