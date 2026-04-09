@@ -29,6 +29,4 @@ private:
 public:
 	ServerSocket(int port);
 	~ServerSocket();
-
-
 };

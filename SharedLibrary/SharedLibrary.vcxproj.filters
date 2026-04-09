@@ -71,9 +71,6 @@
     <ClCompile Include="PacketHandler.cpp">
       <Filter>Source Files\packet</Filter>
     </ClCompile>
-    <ClCompile Include="Packet.cpp">
-      <Filter>Source Files\packet</Filter>
-    </ClCompile>
     <ClCompile Include="cli.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

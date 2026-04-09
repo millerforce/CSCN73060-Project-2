@@ -31,7 +31,6 @@
   <ItemGroup>
     <ClCompile Include="cli.cpp" />
     <ClCompile Include="ClientSocket.cpp" />
-    <ClCompile Include="Packet.cpp" />
     <ClCompile Include="PacketHandler.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="UUID.cpp" />
