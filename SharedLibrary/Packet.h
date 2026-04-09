@@ -11,7 +11,7 @@ struct Packet {
 	float fuel;
 	uint16_t crc;
 
-	Packet(UUID clientId, int dateTime, float fuel, uint16_t crc) : clientId(clientId), dateTime(dateTime), fuel(fuel), crc(crc) {}
+	Packet(UUID_T clientId, int dateTime, float fuel, uint16_t crc) : clientId(clientId), dateTime(dateTime), fuel(fuel), crc(crc) {}
 
 	bool validate() const; // Validate a packet has properly assigned fields
 };
