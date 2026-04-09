@@ -2,16 +2,17 @@
 #include <iostream>
 
 #include "UUID.h"
-#include "file_io.h"
+#include "PacketHandler.h"
+#include "Packet.h"
+
 #include "cli.h"
 #include "utils.h"
-#include "Packet.h"
-#include "PacketHandler.h"
+#include "file_io.h"
 
 int main(int argc, char* argv[]) {
 	Args args = parseArgs(argc, argv);
-	int port = getPort(args);
-	std::string ipAddress = getIp(args);
+	int port = getPort(args, 9000);
+	std::string ipAddress = getIp(args, "10.144.114.34");
 	std::string telemDir = getDir(args);
 
 	std::cout << port << std::endl;
@@ -32,12 +33,13 @@ int main(int argc, char* argv[]) {
 	if (socket.isConnected()) {
 		std::cout << "Connected to Server" << std::endl;
 	}
+	else {
+		std::cout << "Failed to connect to server" << std::endl;
+		WSACleanup();
+		return -1;
+	}
 
-	while (telemetryData.size() > 0) {
-		if (telemetryData[0].empty()) {
-			telemetryData.erase(telemetryData.begin());
-			continue;
-		}
+	while (!telemetryData.empty()) {
 		Packet packet = parseTelemLineToPacket(clientId, telemetryData[0]);
 		telemetryData.erase(telemetryData.begin());
 		socket.send(PacketHandler::serialize(packet));
