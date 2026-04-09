@@ -3,6 +3,7 @@
 #include "InvalidConnectionState.h"
 
 #include <iostream>
+#include <syncstream>
 
 void ServerController::start() {
 	isRunning = true; // Set loop flag
@@ -28,6 +29,8 @@ void ServerController::acceptLoop() {
 			// Block until a client connects
 			ClientSocket client = serverSocket.acceptConnection();
 
+			std::osyncstream(std::cout) << "New client connected" << std::endl;
+
 			// Pass client into its own thread
 			clientThreads.emplace_back([this, client = std::move(client)]() mutable {
 				clientHandler(client);
@@ -38,4 +41,8 @@ void ServerController::acceptLoop() {
 		}
 		
 	}
+}
+
+std::thread& ServerController::getAcceptThread() {
+	return acceptThread;
 }

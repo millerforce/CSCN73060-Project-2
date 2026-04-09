@@ -21,4 +21,6 @@ public:
 
 	void start();
 	void stop();
+
+	std::thread& getAcceptThread();
 };
