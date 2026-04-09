@@ -21,7 +21,7 @@ ClientSocket::ClientSocket(const std::string& IPAddr, int port) {
 	}
 }
 
-SocketBuffer ClientSocket::receive(size_t size) const {
+SocketBuffer ClientSocket::receive(int size) const {
 	std::vector<char> buffer(size);
 
 	// Attempt to read provided max number of bytes

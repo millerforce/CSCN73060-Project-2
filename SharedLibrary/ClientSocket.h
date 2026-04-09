@@ -18,7 +18,7 @@ public:
 	ClientSocket(SOCKET socket) : connectionSocket(socket) {} // Create object with existing socket
 	ClientSocket(const std::string& IPAddr, int port); // Create object with new socket
 
-	SocketBuffer receive(size_t size) const; // Receive provided number of bytes and return data in a SocketBuffer
+	SocketBuffer receive(int size) const; // Receive provided number of bytes and return data in a SocketBuffer
 	int send(const SocketBuffer& data) const; // Send data from provided buffer
 
 	void close(); // Close the contained socket

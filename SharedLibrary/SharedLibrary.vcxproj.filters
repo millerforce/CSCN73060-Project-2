@@ -31,6 +31,9 @@
     <Filter Include="Source Files\uuid">
       <UniqueIdentifier>{c6ed2d0e-e1e8-4a33-a677-a03ec6d05628}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\packet">
+      <UniqueIdentifier>{17e51dff-05ce-4f71-8bb5-fdf30a7dd76d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClientSocket.h">
@@ -58,6 +61,12 @@
     </ClCompile>
     <ClCompile Include="UUID.cpp">
       <Filter>Source Files\uuid</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketHandler.cpp">
+      <Filter>Source Files\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="Packet.cpp">
+      <Filter>Source Files\packet</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

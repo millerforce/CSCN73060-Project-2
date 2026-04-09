@@ -6,10 +6,12 @@
 
 // Represents a deserialized data packet that is sent between the client and server
 struct Packet {
-	UUID clientId; // The clients unique identifier
+	::UUID clientId; // The clients unique identifier
 	int dateTime; // The unix timestamp
 	float fuel;
 	uint16_t crc;
 
 	Packet(UUID clientId, int dateTime, float fuel, uint16_t crc) : clientId(clientId), dateTime(dateTime), fuel(fuel), crc(crc) {}
+
+	bool validate() const; // Validate a packet has properly assigned fields
 };
