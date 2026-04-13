@@ -38,7 +38,7 @@ static void clientFunc(ClientSocket& socket) {
 	bool result = writer.close();
 
 	if (result) std::cout << "Client flight ended successfully" << std::endl;
-	else std::cerr << "Client flight failed to end successfully" << std::endl;
+	else std::cerr << "Client flight ended unsuccessfully" << std::endl;
 
 	return;
 }
