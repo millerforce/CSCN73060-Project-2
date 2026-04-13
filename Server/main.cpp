@@ -32,6 +32,7 @@ static void clientFunc(ClientSocket& socket) {
 		}
 		else {
 			std::cerr << "Failed to receive from client" << std::endl;
+			std::cerr << "Error: " << WSAGetLastError() << std::endl;
 		}
 	}
 

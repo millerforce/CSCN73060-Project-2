@@ -12,7 +12,7 @@
 int main(int argc, char* argv[]) {
 	Args args = parseArgs(argc, argv);
 	int port = getPort(args, 9000);
-	std::string ipAddress = getIp(args, "10.192.85.191");
+	std::string ipAddress = getIp(args, "10.144.114.53");
 	std::string telemDir = getDir(args, "../../Client/data/");
 	//std::string telemDir = getDir(args, "./data/");
 
@@ -51,7 +51,7 @@ int main(int argc, char* argv[]) {
 			std::cout << "Failed to send packet: " << sent << std::endl;
 			std::cout << "Error: " << WSAGetLastError() << std::endl;
 		}
-		Sleep(100);
+		Sleep(1000);
 	}
 	std::cout << "All telemtry data sent." << std::endl;
 
