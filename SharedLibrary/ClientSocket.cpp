@@ -23,8 +23,6 @@ ClientSocket::ClientSocket(const std::string& IPAddr, int port) {
 }
 
 bool ClientSocket::receive(char* buffer, int size) {
-	//std::vector<char> buffer(size);
-
 	// Attempt to read provided max number of bytes
 	int bytesRead = recv(connectionSocket, buffer, size, 0);
 
@@ -39,7 +37,6 @@ bool ClientSocket::receive(char* buffer, int size) {
 		return false;
 	}
 
-	// buffer.resize(bytesRead); // Resize to the number of bytes read
 	return true;
 }
 
