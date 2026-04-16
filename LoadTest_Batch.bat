@@ -3,7 +3,7 @@ SET /A "ip = 10.192.75.217"
 SET /A "port = 9000"
 SET /A "dir = ../../Client/data/"
 SET /A "index = 1"
-SET /A "count = 200"
+SET /A "count = 100"
 
 CD ./x64/Release
 
